@@ -1,9 +1,7 @@
 name: Release
 
 on:
-  push:
-    branches:
-      - master
+  workflow_dispatch: # fork proof run only: no releases from the fork
 
 concurrency:
   group: release
